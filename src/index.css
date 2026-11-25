@@ -1,0 +1,31 @@
+:root {
+  --primary: #6c63ff;
+  --primary-2: #a05cc4;
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #6b7385;
+  --line: #e6e9f0;
+  --soft: #f0f1f6;
+  --good: #1b9a55;
+  --bad: #d64545;
+  --shadow: 0 10px 30px rgba(31, 36, 48, 0.08);
+}
+[data-theme="dark"] {
+  --bg: #12141c;
+  --card: #1c1f2b;
+  --text: #eef0f6;
+  --muted: #9aa2b6;
+  --line: #2b3042;
+  --soft: #252938;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+button, input, textarea, select { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; }
